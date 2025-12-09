@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Samsco Communications | Aiyedun Samuel</title>
+    <meta name="description" content="Portfolio of Aiyedun Samuel (Samsco) - Multidisciplinary Creative Technologist." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --bg-dark: #050505;
+        --accent-blue: #2563eb;
+        --neon-blue: #00f0ff;
+      }
+      body.god-mode {
+        --accent-blue: #dc2626; 
+        --neon-blue: #ff004c;   
+      }
+      body {
+        background-color: var(--bg-dark);
+        color: white;
+        font-family: 'Outfit', sans-serif;
+        cursor: none; /* Hide default cursor for custom one */
+      }
+      a, button { cursor: none; }
+      
+      /* Utilities */
+      .hero-text-mask { overflow: hidden; display: block; line-height: 1.1; }
+      .glass-card { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.05); transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+      .glass-card:hover { background: rgba(255, 255, 255, 0.08); border-color: var(--accent-blue); transform: translateY(-5px); box-shadow: 0 20px 40px -10px rgba(0,0,0,0.5); }
+      
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar { width: 8px; }
+      ::-webkit-scrollbar-track { background: #000; }
+      ::-webkit-scrollbar-thumb { background: var(--accent-blue); border-radius: 4px; }
+      
+      .text-reveal-line { clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "gsap/": "https://aistudiocdn.com/gsap@^3.14.1/",
+    "gsap": "https://aistudiocdn.com/gsap@^3.14.1",
+    "three": "https://aistudiocdn.com/three@^0.181.2",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.556.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
